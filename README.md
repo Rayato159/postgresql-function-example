@@ -1,6 +1,6 @@
-<h1>PostgreSQL Function Example</h1>
+<h1>🐘 PostgreSQL Function Example</h1>
 
-<h2>Installation</h2>
+<h2>⚙️ Installation</h2>
 <p>Reccommend to install a postgres into the docker</p>
 
 <ol>
@@ -52,7 +52,7 @@ PASSWORD: 123456
 
 </ol>
 
-<h2>Exmaple</h2>
+<h2>✏️ Exmaple</h2>
 
 <p><strong>Returning a table</strong></p>
 
@@ -112,5 +112,8 @@ SELECT * FROM get_manga_from_price(160);
 DROP FUNCTION function_name;
 ```
 
-<h2>Refenece</h2>
+<h2>💰 Donate Me on Stripe</h2>
+<p><a href="https://buy.stripe.com/bIY03L6vp0vJa883cc">https://buy.stripe.com/bIY03L6vp0vJa883cc</a></p>
+
+<h2>📑 Refenece</h2>
 <p><a href="https://www.postgresql.org/docs/current/sql-createfunction.html">https://www.postgresql.org/docs/current/sql-createfunction.html</a></p>
