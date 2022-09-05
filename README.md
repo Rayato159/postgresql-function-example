@@ -74,8 +74,6 @@ AS $$
 		WHERE "v"."manga_id" = $1;
 	END;
 $$ LANGUAGE plpgsql;
-
-SELECT * FROM get_one_piece_all_volumes(1);
 ```
 
 <p><strong>Returning a values or column</strong></p>
@@ -96,8 +94,22 @@ AS $$
 		"manga";
 	END;
 $$ LANGUAGE plpgsql;
+```
 
+<p><strong>Usecase</strong></p>
+
+```sql
+SELECT * FROM get_one_piece_all_volumes(1);
+```
+
+```sql
 SELECT * FROM get_manga_from_price(160);
+```
+
+<p><strong>Drop function</strong></p>
+
+```sql
+DROP FUNCTION function_name;
 ```
 
 <h2>Refenece</h2>
