@@ -96,7 +96,7 @@ AS $$
 $$ LANGUAGE plpgsql;
 ```
 
-<p><strong>Usecase</strong></p>
+<p><strong>Usecases</strong></p>
 
 ```sql
 SELECT * FROM get_one_piece_all_volumes(1);
@@ -106,7 +106,7 @@ SELECT * FROM get_one_piece_all_volumes(1);
 SELECT * FROM get_manga_from_price(160);
 ```
 
-<p><strong>Drop function</strong></p>
+<p><strong>Drop a function</strong></p>
 
 ```sql
 DROP FUNCTION function_name;
