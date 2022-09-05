@@ -54,8 +54,50 @@ PASSWORD: 123456
 
 <h2>Exmaple</h2>
 
-```sql
+<p><strong>Returning a table</strong></p>
 
+```sql
+CREATE OR REPLACE FUNCTION get_one_piece_all_volumes(manga_id INT)
+RETURNS TABLE (
+	"id" INT,
+	"title" VARCHAR,
+	"vol" INT
+)
+AS $$
+	BEGIN
+		RETURN QUERY SELECT
+			"m"."id",
+			"m"."title",
+			"v"."volume" AS "vol"
+		FROM "mangas" "m"
+		LEFT JOIN "volumes" "v" ON "v"."manga_id" = "m"."id"
+		WHERE "v"."manga_id" = $1;
+	END;
+$$ LANGUAGE plpgsql;
+
+SELECT * FROM get_one_piece_all_volumes(1);
+```
+
+<p><strong>Returning a values or column</strong></p>
+
+```sql
+CREATE OR REPLACE FUNCTION get_manga_from_price(price FLOAT)
+RETURNS VARCHAR
+AS $$
+	DECLARE
+		"manga" VARCHAR;
+	BEGIN
+		SELECT INTO "manga"
+		"m"."title"
+		FROM "mangas" "m"
+		LEFT JOIN "volumes" "v" ON "v"."manga_id" = "m"."id"
+		WHERE "v"."price" >= $1;
+	RETURN
+		"manga";
+	END;
+$$ LANGUAGE plpgsql;
+
+SELECT * FROM get_manga_from_price(160);
 ```
 
 <h2>Refenece</h2>
