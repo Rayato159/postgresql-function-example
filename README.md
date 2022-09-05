@@ -56,6 +56,7 @@ DATABASE: how_to_func
 <h2>✏️ Exmaple</h2>
 
 <p><strong>Returning a table</strong></p>
+<p>Find all volumes of a manga by id</p>
 
 ```sql
 CREATE OR REPLACE FUNCTION get_one_piece_all_volumes(manga_id INT)
@@ -78,6 +79,7 @@ $$ LANGUAGE plpgsql;
 ```
 
 <p><strong>Returning a values or column</strong></p>
+<p>Find a manga that price is more than n</p>
 
 ```sql
 CREATE OR REPLACE FUNCTION get_manga_from_price(price FLOAT)
