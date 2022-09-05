@@ -78,7 +78,7 @@ AS $$
 $$ LANGUAGE plpgsql;
 ```
 
-<p><strong>Returning a values or column</strong></p>
+<p><strong>Returning a value</strong></p>
 <p>Find a manga that price is more than n</p>
 
 ```sql
