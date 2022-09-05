@@ -1,7 +1,7 @@
 <h1>🐘 PostgreSQL Function Example</h1>
 
 <h2>⚙️ Installation</h2>
-<p>Reccommend to install a postgres into the docker</p>
+<p>Recommend to install a postgres into the docker</p>
 
 <ol>
 <strong><li>Pull a postgres image</li></strong>
