@@ -46,6 +46,7 @@ HOST: 0.0.0.0
 PORT: 4181
 USERNAME: postgres
 PASSWORD: 123456
+DATABASE: how_to_func
 ```
 
 <strong><li>Open a sql script and copy code from <a href="./migrate.sql">migrate.sql</a> and paste then run to generate the mock data</li></strong>
