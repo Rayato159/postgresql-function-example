@@ -59,7 +59,7 @@ DATABASE: how_to_func
 <p>Find all volumes of a manga by id</p>
 
 ```sql
-CREATE OR REPLACE FUNCTION get_one_piece_all_volumes(manga_id INT)
+CREATE OR REPLACE FUNCTION get_all_volumes(manga_id INT)
 RETURNS TABLE (
 	"id" INT,
 	"title" VARCHAR,
