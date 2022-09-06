@@ -102,7 +102,7 @@ $$ LANGUAGE plpgsql;
 <p><strong>Usecases</strong></p>
 
 ```sql
-SELECT * FROM get_one_piece_all_volumes(1);
+SELECT * FROM get_all_volumes(1);
 ```
 
 ```sql
